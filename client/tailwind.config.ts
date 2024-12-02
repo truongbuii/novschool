@@ -9,12 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        sky: '#C3EBFA',
-        skyLight: '#EDF9FD',
-        purple: '#CFCEFF',
-        purpleLight: '#F1F0FF',
-        yellow: '#FAE27C',
-        yellowLight: '#FEFCE8'
+        nSky: '#C3EBFA',
+        nSkyLight: '#EDF9FD',
+        nPurpleDark: '#A6A4F1',
+        nPurple: '#CFCEFF',
+        nPurpleLight: '#F1F0FF',
+        nYellow: '#FAE27C',
+        nYellowLight: '#FEFCE8'
       }
     }
   },

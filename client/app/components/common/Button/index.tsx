@@ -12,6 +12,11 @@ export enum SizeButton {
   'small' = 'small'
 }
 
+const backgroundByType = {
+  [TypeButton.primary]: '#A6A4F1',
+  [TypeButton.default]: '#F6F6F6'
+};
+
 const heightBySize = {
   [SizeButton.large]: '60px',
   [SizeButton.middle]: '48px',
@@ -58,6 +63,7 @@ const CustomButton: FC<IButton> = ({
           height: heightBySize[size],
           width: widthBySize[size],
           fontSize: fontSizeBySize[size],
+          background: backgroundByType[type],
           fontWeight: 600,
           borderRadius: '29px',
           ...props.style

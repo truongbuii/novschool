@@ -3,9 +3,9 @@
 import { useForm } from 'react-hook-form';
 import { SignInSchema, TSignInSchema } from './validSchema';
 import { zodResolver } from '@hookform/resolvers/zod';
-import Form from '@/components/atom/Form';
-import InputField from '@/components/atom/Form/InputField';
-import CustomButton from '@/components/atom/Button';
+import Form from '@/components/common/Form';
+import InputField from '@/components/common/Form/InputField';
+import CustomButton from '@/components/common/Button';
 
 const LoginForm = () => {
   const {
