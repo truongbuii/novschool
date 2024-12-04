@@ -1,6 +1,7 @@
 import React from 'react';
 import { EllipsisOutlined } from '@ant-design/icons';
 import AttendanceChart from './AttendanceChart';
+import { Button } from 'antd';
 
 const AttendanceChartContainer = () => {
   const today = new Date();
@@ -31,7 +32,9 @@ const AttendanceChartContainer = () => {
     <div className="bg-white rounded-lg p-4 h-full shadow">
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-lg font-semibold">Attendance</h1>
-        <EllipsisOutlined style={{ fontSize: 30, color: 'gray' }} />
+        <Button type="text">
+          <EllipsisOutlined style={{ fontSize: 30, color: 'gray' }} />
+        </Button>
       </div>
 
       <AttendanceChart data={data} />

@@ -38,7 +38,7 @@ const InputField = <T extends FieldValues>(props: InputFieldProps<T>) => {
       <Controller
         control={control}
         name={name}
-        defaultValue={'' as string}
+        defaultValue={'' as any}
         render={({ field }) => (
           <AntdInput
             {...rest}

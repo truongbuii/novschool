@@ -1,5 +1,6 @@
 import { EllipsisOutlined } from '@ant-design/icons';
 import CountChart from './CountChart';
+import { Button } from 'antd';
 
 const CountChartContainer = () => {
   const boys = 20;
@@ -9,7 +10,9 @@ const CountChartContainer = () => {
     <div className="bg-white rounded-xl w-full h-full p-4 shadow">
       <div className="flex justify-between items-center">
         <h1 className="text-lg font-semibold">Students</h1>
-        <EllipsisOutlined style={{ fontSize: 30, color: 'gray' }} />
+        <Button type="text">
+          <EllipsisOutlined style={{ fontSize: 30, color: 'gray' }} />
+        </Button>
       </div>
       <CountChart boys={boys} girls={girls} />
       <div className="flex justify-center gap-16">

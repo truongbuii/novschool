@@ -1,5 +1,6 @@
 import { UserRole } from '@/types';
 import { EllipsisOutlined } from '@ant-design/icons';
+import { Button } from 'antd';
 
 interface UserCardProps {
   type: UserRole;
@@ -21,7 +22,9 @@ const UserCard = ({ type }: UserCardProps) => {
         <span className="text-[10px] bg-white px-2 py-1 rounded-full text-green-600">
           2024/25
         </span>
-        <EllipsisOutlined style={{ fontSize: 30, color: 'white' }} />
+        <Button type="text">
+          <EllipsisOutlined style={{ fontSize: 30, color: 'white' }} />
+        </Button>
       </div>
       <h1 className="text-2xl font-semibold my-4">{data}</h1>
       <h2 className="capitalize text-sm font-medium text-gray-500">{type}s</h2>

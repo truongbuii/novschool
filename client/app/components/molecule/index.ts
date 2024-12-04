@@ -4,6 +4,8 @@ import UserCard from './UserCard';
 import CountChartContainer from './CountChartContainer';
 import AttendanceChartContainer from './AttendanceChartContainer';
 import FinanceChartContainer from './FinanceChartContainer';
+import CalendarContainer from './CalendarContainer';
+import Announcement from './Announcement';
 
 export {
   Menu,
@@ -11,5 +13,7 @@ export {
   UserCard,
   CountChartContainer,
   AttendanceChartContainer,
-  FinanceChartContainer
+  FinanceChartContainer,
+  CalendarContainer,
+  Announcement
 };
