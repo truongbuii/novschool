@@ -15,7 +15,7 @@ const NavBar = () => {
       <div className="flex items-center gap-6 justify-end w-full">
         <Badge count={0} offset={[0, 0]}>
           <Avatar
-            size="large"
+            size="default"
             icon={
               <Icons.Message
                 style={{
@@ -29,9 +29,9 @@ const NavBar = () => {
             }}
           />
         </Badge>
-        <Badge count={1} offset={[-5, 5]}>
+        <Badge count={2} offset={[-3, 3]}>
           <Avatar
-            size="large"
+            size="default"
             icon={
               <Icons.Notification
                 style={{
@@ -49,7 +49,7 @@ const NavBar = () => {
         <div className="text-right flex gap-4">
           <div className="flex flex-col">
             <span className="text-sm font-medium">John Doe</span>
-            <span className="text-xs text-gray-500">Student</span>
+            <span className="text-[10px] text-gray-500">Student</span>
           </div>
           <Avatar
             size="default"

@@ -1,5 +1,38 @@
+import {
+  AttendanceChartContainer,
+  CountChartContainer,
+  FinanceChartContainer,
+  UserCard
+} from '@/components/molecule';
+import { UserRole } from '@/types';
+
 const AdminPage = () => {
-  return <div className="">AdminPage</div>;
+  return (
+    <div className="p-4 flex gap-4 flex-col md:flex-row">
+      <div className="w-full lg:w-2/3 flex flex-col gap-8">
+        <div className="flex gap-4 justify-between flex-wrap">
+          <UserCard type={UserRole.ADMIN} />
+          <UserCard type={UserRole.TEACHER} />
+          <UserCard type={UserRole.STUDENT} />
+          <UserCard type={UserRole.PARENT} />
+        </div>
+
+        <div className="flex gap-4 flex-col lg:flex-row">
+          <div className="w-full lg:w-1/3 h-[450px]">
+            <CountChartContainer />
+          </div>
+          <div className="w-full lg:w-2/3 h-[450px]">
+            <AttendanceChartContainer />
+          </div>
+        </div>
+        <div className="w-full h-[500px]">
+          <FinanceChartContainer />
+        </div>
+      </div>
+
+      <div className="w-full lg:w-1/3 flex flex-col gap-8"></div>
+    </div>
+  );
 };
 
 export default AdminPage;
