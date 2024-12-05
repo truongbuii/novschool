@@ -1,14 +1,14 @@
 import {
   Announcement,
   AttendanceChartContainer,
-  CalendarContainer,
+  EventCalendarContainer,
   CountChartContainer,
   FinanceChartContainer,
   UserCard
 } from '@/components/molecule';
 import { UserRole } from '@/types';
 
-type SearchParams = {
+export type SearchParams = {
   page?: string;
   filter?: string;
   sort?: string;
@@ -39,7 +39,7 @@ const AdminPage = ({ searchParams }: { searchParams: SearchParams }) => {
       </div>
 
       <div className="w-full lg:w-1/3 flex flex-col gap-8">
-        <CalendarContainer searchParams={searchParams} />
+        <EventCalendarContainer searchParams={searchParams} />
         <Announcement />
       </div>
     </div>
