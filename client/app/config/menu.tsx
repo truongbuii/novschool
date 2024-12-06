@@ -15,7 +15,7 @@ export interface MenuSection {
   children: MenuItem[];
 }
 
-const ROLES = {
+export const ROLES = {
   ADMIN: 'admin',
   TEACHER: 'teacher',
   STUDENT: 'student',

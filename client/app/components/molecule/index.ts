@@ -7,6 +7,7 @@ import FinanceChartContainer from './FinanceChartContainer';
 import EventCalendarContainer from './EventCalendarContainer';
 import Announcement from './Announcement';
 import ScheduleCalendarContainer from './ScheduleCalendarContainer';
+import CustomTable from './Table';
 
 export {
   Menu,
@@ -17,5 +18,6 @@ export {
   FinanceChartContainer,
   EventCalendarContainer,
   Announcement,
-  ScheduleCalendarContainer
+  ScheduleCalendarContainer,
+  CustomTable
 };
