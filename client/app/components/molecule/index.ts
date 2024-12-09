@@ -8,6 +8,7 @@ import EventCalendarContainer from './EventCalendarContainer';
 import Announcement from './Announcement';
 import ScheduleCalendarContainer from './ScheduleCalendarContainer';
 import CustomTable from './Table';
+import Performance from './Performance';
 
 export {
   Menu,
@@ -19,5 +20,6 @@ export {
   EventCalendarContainer,
   Announcement,
   ScheduleCalendarContainer,
-  CustomTable
+  CustomTable,
+  Performance
 };

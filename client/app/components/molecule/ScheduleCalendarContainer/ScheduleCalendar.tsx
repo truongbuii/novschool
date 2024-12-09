@@ -124,7 +124,7 @@ const mockCalendarEvents: CalendarEvent[] = [
   {
     title: 'English',
     allDay: false,
-    ...convertEventTime('2024-12-06T09:00:00', '2024-12-06T09:45:00')
+    ...convertEventTime('2024-15-09T09:00:00', '2024-12-09T09:45:00')
   },
   {
     title: 'Physics',
@@ -134,7 +134,7 @@ const mockCalendarEvents: CalendarEvent[] = [
   {
     title: 'Chemistry',
     allDay: false,
-    ...convertEventTime('2024-12-06T13:00:00', '2024-12-06T13:45:00')
+    ...convertEventTime('2024-12-09T13:00:00', '2024-12-09T13:45:00')
   },
   {
     title: 'History',
